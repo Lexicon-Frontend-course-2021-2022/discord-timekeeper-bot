@@ -72,7 +72,7 @@ const crontabs = () => {
  * ========================================================================= */
 const say = (channel, msg) => {
   if (config.live) {
-    channel.send(msg);
+    config.channel.send(msg);
   }
   console.log(`say: ${msg}`);
 };
