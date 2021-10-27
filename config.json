@@ -1,0 +1,52 @@
+{
+    "live": true,
+    "channel": "test",
+    "greeting": "",
+    "timezone": "CET",
+    "crontabs": [
+        {
+            "crontab": "0 0 8 * * 1-5",
+            "message": "Nu är det dags att checka in!"
+        },
+        {
+            "crontab": "0 0 9 * * 1-5",
+            "message": "Woop! Woop! Nu startar radio Max för dagen!"
+        },
+        {
+            "crontab": "0 0 10 * * 1-5",
+            "message": "Kafferast!"
+        },
+        {
+            "crontab": "0 20 10 * * 1-5",
+            "message": "Nu är kafferasten slut!"
+        },
+        {
+            "crontab": "0 0 12 * * 1-5",
+            "message": "Dags för lunchrast! Omsnoms!"
+        },
+        {
+            "crontab": "0 0 13 * * 1-5",
+            "message": "Lunchen är slut! Tillbaka till lektionen!"
+        },
+        {
+            "crontab": "0 37 13 * * *",
+            "message": "Nu är klockan 13:37! Alla programmerare vet varför det är speciellt! :)"
+        },
+        {
+            "crontab": "0 0 16 * * 1-5",
+            "message": "Nu är dagens lektioner slut! Glöm inte att hänga i KOD-stugan, om ni vill!"
+        },
+        {
+            "crontab": "0 0 17 * * 1-5",
+            "message": "Nu är det dags att checka ut!"
+        },
+        {
+            "crontab": "0 0 08 7 * *",
+            "message": "Glöm inte: idag är sista dagen att ansöka aktivitetsstöd på försäkringskassan."
+        },
+        {
+            "crontab": "0 0 08 14 * *",
+            "message": "Glöm inte: idag är sista dagen att skicka in aktivitetsrapport till arbetsförmedlingen."
+        }
+    ]
+}
