@@ -16,6 +16,9 @@ let config = JSON.parse(require('fs').readFileSync('config.json'));
 const { Client } = require('discord.js');
 const bot = new Client();
 
+// stash channel
+let theChannel;
+
 /* ============================================================================
  * When bot is logged in, get channel named CHANNEL and start all cronjobs
  * ========================================================================= */
@@ -32,9 +35,10 @@ bot.on('ready', () => {
 
         .then(channel => {
 
+          theChannel = channel;
           // Greet IF we have a greeting defined
           if (config.greeting) {
-            say(channel, config.greeting);
+            say(config.greeting);
           }
 
           // Start crontabs
@@ -60,7 +64,7 @@ const crontabs = () => {
   // Loop through config.crontabs and start a cron job for each object
   config.crontabs.forEach(item => {
     const cron = new CronJob(item.crontab, () => {
-      say(config.channel, item.message);
+      say(item.message);
     }, null, true, config.timezone);
   });
 
@@ -70,9 +74,9 @@ const crontabs = () => {
  * Helper function for local development. If config.live is false, print to 
  * console instead of spamming discord...
  * ========================================================================= */
-const say = (channel, msg) => {
+const say = msg => {
   if (config.live) {
-    config.channel.send(msg);
+    theChannel.send(msg);
   }
   console.log(`say: ${msg}`);
 };

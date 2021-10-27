@@ -17,7 +17,15 @@
             "message": "Kafferast!"
         },
         {
-            "crontab": "0 20 10 * * 1-5",
+            "crontab": "0 15 10 * * 1-5",
+            "message": "Nu är kafferasten slut!"
+        },
+        {
+            "crontab": "0 0 11 * * 1-5",
+            "message": "Kafferast!"
+        },
+        {
+            "crontab": "0 15 11 * * 1-5",
             "message": "Nu är kafferasten slut!"
         },
         {
@@ -33,8 +41,24 @@
             "message": "Nu är klockan 13:37! Alla programmerare vet varför det är speciellt! :)"
         },
         {
+            "crontab": "0 0 14 * * 1-5",
+            "message": "Kafferast!"
+        },
+        {
+            "crontab": "0 15 14 * * 1-5",
+            "message": "Nu är kafferasten slut!"
+        },
+        {
+            "crontab": "0 0 15 * * 1-5",
+            "message": "Kafferast!"
+        },
+        {
+            "crontab": "0 15 15 * * 1-5",
+            "message": "Nu är kafferasten slut!"
+        },
+        {
             "crontab": "0 0 16 * * 1-5",
-            "message": "Nu är dagens lektioner slut! Glöm inte att hänga i KOD-stugan, om ni vill!"
+            "message": "Nu är dagens lektioner slut! Glöm inte att hänga i KOD-stugan!"
         },
         {
             "crontab": "0 0 17 * * 1-5",
