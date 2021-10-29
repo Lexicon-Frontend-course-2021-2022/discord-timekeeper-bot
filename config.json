@@ -1,6 +1,6 @@
 {
     "live": true,
-    "channel": "test",
+    "channel": "hangout",
     "greeting": "",
     "timezone": "CET",
     "crontabs": [
@@ -34,7 +34,7 @@
         },
         {
             "crontab": "0 0 13 * * 1-5",
-            "message": "Lunchen är slut! Tillbaka till lektionen!"
+            "message": "Lunchen är slut! Tillbaka till lektionen, latmaskar!"
         },
         {
             "crontab": "0 37 13 * * *",

@@ -35,7 +35,9 @@ bot.on('ready', () => {
 
         .then(channel => {
 
+          // Stash channel
           theChannel = channel;
+
           // Greet IF we have a greeting defined
           if (config.greeting) {
             say(config.greeting);
