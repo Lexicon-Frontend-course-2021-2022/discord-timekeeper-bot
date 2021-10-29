@@ -57,7 +57,7 @@
             "message": "Nu är kafferasten slut!"
         },
         {
-            "crontab": "0 0 16 * * 1-5",
+            "crontab": "0 0 16 * * 1-4",
             "message": "Nu är dagens lektioner slut! Glöm inte att hänga i KOD-stugan!"
         },
         {
